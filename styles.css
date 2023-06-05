@@ -1,0 +1,42 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(112, 111, 111);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+form input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"]{
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+
+.stop{
+    transition: 1s;
+}
+
+.move{
+    transform: translateX(100%);
+}
+
