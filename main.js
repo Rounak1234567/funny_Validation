@@ -1,11 +1,11 @@
-const email = document.getElementById("email");
+const nameInp = document.getElementById("name");
 const pass = document.getElementById("pass");
 const loginBtn = document.getElementById("submit");
 
 loginBtn.addEventListener("mouseover",(button)=>{
-    let emailInp = email.value;
+    let nameInput = nameInp.value;
     let passInp = pass.value;
-    if(passInp === "" || emailInp === ""){
+    if(passInp === "" || nameInput === ""){
         button.target.classList.toggle("move");
         loginBtn.style.background = "red";
     }
@@ -13,4 +13,10 @@ loginBtn.addEventListener("mouseover",(button)=>{
         button.target.classList.toggle("stop");
         loginBtn.style.background = "green";
     }
+})
+
+
+loginBtn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    alert(`ThankYou ${nameInp.value} for testing`);
 })
